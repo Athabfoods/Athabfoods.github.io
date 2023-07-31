@@ -48,27 +48,106 @@ a:active {
 }
   </style>
   
+  
+<style>
+/* Dropdown Button */
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #c5aa5c;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #96b15f;}
+</style>
+
+<style>
+body {
+  margin: 0;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #f1d778;
+  padding: 10px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #eadcc8;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #991a12;
+  text-align: center;
+  padding: 11px 14px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#navbar a:hover  {
+  background-color: #e3511f;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.content  {
+  padding: 10px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+} 
+</style>
 </head>
 
 <body>
-  
-  <h1>
-    INTRODUCTION:
-  </h1>
-  
-<hr>
-
-  <h3>
-    Navigation:
-  </h3>
-  
-    <nav>
-      Go back to the<a href="./index.html"> welcome page</a>
-    </nav>
-    <br>
-   
-
-<hr>
 
   <h3>
     Page contents:
@@ -105,24 +184,19 @@ a:active {
 
 <hr>
 
-<ul>
+<div class="header">
+  <h2>Introduction</h2>
+</div>
 
-  <li><a href="./Why Will It Work.html">Why it will work page</a></li>
-  <br>
-  <li><a href="./Projects.html">Projects section</a></li>
-  <br>
-  <li><a href="./Plant Care and Soil Life.html">Plant care and soil life page.</a> </li>
-  <br>
-  <li>The <a href="./Extra Documentaries.html">extra documentaries page</a> in the <a href="./Learning">learning section</a></li>
-</ul>
-  <br>Go to the <a href="./Home.html"> Home page</a>.
-  
-
-<hr>  
-
-  <h3>
-    Or continue to see costs!
-  </h3>
+<div id="navbar">
+  <a class="active" href="index.html">Welcome</a>
+  <a href="Home.html">Home</a>
+  <a href="Why Will It Work.html">Why it works</a>
+  <a href="Projects.html">Projects</a>
+  <a href="Plant Care and Soil Life.html">Plant care + soil life</a>
+  <a href="Contact.html">Contact</a>
+</div>
+<div class="content">
 
 <hr>
     
@@ -442,24 +516,24 @@ a:active {
       
  <hr>
 
-  <h3>
-    Links:
-  </h3>
-    <a href="./index.html">Welcome page</a>
-    <br>
-    <br>
-    <a href="./Home.html">Home - index</a> (next page)
-    <br>
-    <br>
-    <a href="./Why Will It Work.html"> Why it will work.</a> 
-    <br>
-    <br>
-    <a href="./Projects.html">Projects page.</a>
-    <br>
-    <br>
-    <a href="./Plant Care and Soil Life.html"> Plant care.</a>
-  
+</div>
 
+<script>
+window.onscroll = function()
+{myFunction()};
+
+var navbar = document.getElementById("navbar");
+
+var sticky = navbar.offsetTop;
+
+function myFunction()  {
+  if (window.pageYOffset >= sticky)  {
+  navbar.classList.add("sticky")
+  } else {
+  navbar.classList.remove("sticky");
+  }
+}
+</script>
 
 </body>
 

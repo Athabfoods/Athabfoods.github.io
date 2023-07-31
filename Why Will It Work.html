@@ -47,41 +47,127 @@ a:active {
 }
   </style>
   
+  
+<style>
+/* Dropdown Button */
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #c5aa5c;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #96b15f;}
+</style>
+
+<style>
+body {
+  margin: 0;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #f1d778;
+  padding: 10px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #eadcc8;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #991a12;
+  text-align: center;
+  padding: 11px 14px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#navbar a:hover  {
+  background-color: #e3511f;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.content  {
+  padding: 10px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+} 
+</style>
 </head>
 
 <body>
   
+<div class="header">
+  <h2>Why It Works</h2>
+</div>
+
+<div id="navbar">
+  <a class="active" href="Deep .html">Introduction</a>
+  <a href="Home.html">Home</a>
+  <a href="Fixable Reasons Why We Pay More html.html">Fixable extra costs</a>
+  <a href="Plant Care and Soil Life.html">Plant Care+Soil</a>
+  <a href="About.html">About</a>
+  <a href="Learning.html">Resources</a>
+  <a href="Projects.html">Projects</a>
+  <a href="Contact.html">Contact</a>
+</div>
+<div class="content">
+  
+  
   <h1>
     WHY WILL THIS GREENHOUSE WORK:
   </h1>
-  
-<hr>
-
-  <h3>
-    Navigation:
-  </h3>
-  
-<hr>
-  <nav>
-    <a href="./Home.html">Home</a>
-        <br>
-        <br>
-    <a href="./Fixable Reasons Why We Pay More.html">Fixable Reasons Why We Pay More</a>
-        <br>
-        <br>
-          <u>Additional sections:</u>
-        <br>
-    <a href="./About.html">About</a>
-        <br>
-    <a href="./Learning.html">Learning</a>
-        <br>
-    <a href="./Projects.html">Projects</a>
-        <br>
-    <a href="./Contact.html">Contact</a>
-    
-  </nav>
-       
-<hr>
  
   <h4>
     How do we know that we can grow Citrus and other warm climate foods here north of Edmonton in Alberta Canada?
@@ -372,7 +458,25 @@ a:active {
     <br>
     <br>
     <a href="./Projects.html">Projects</a>
+    
+</div>
 
+<script>
+window.onscroll = function()
+{myFunction()};
+
+var navbar = document.getElementById("navbar");
+
+var sticky = navbar.offsetTop;
+
+function myFunction()  {
+  if (window.pageYOffset >= sticky)  {
+  navbar.classList.add("sticky")
+  } else {
+  navbar.classList.remove("sticky");
+  }
+}
+</script>
 
 </body>
 
