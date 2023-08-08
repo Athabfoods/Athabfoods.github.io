@@ -208,8 +208,41 @@ body {
 
 <!-- Jump up or down on this page -->
 <h2 id="C4">Chapter 4</h2>
-
 <a href="#C4">Jump to Chapter 4</a>
+<!-- Jump to another page -->
+<a href="html_demo.html#C4">Jump to Chapter 4</a>
+
+<!-- Set image size (both code styles) -->
+<img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+<!-- Alternatively -->
+<img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+
+<!-- Images in sub-folder -->
+<img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+<!-- Floating images -->
+<p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+The image will float to the right of the text.</p>
+
+<p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+The image will float to the left of the text.</p>
+
+<!-- Background image in element -->
+<p style="background-image: url('img_girl.jpg');">
+  <!-- Needs to be in head element -->
+  <style>
+    p {
+      background-image: url('img_girl.jpg');
+    }
+  </style>
+  
+<!-- Background image whole page (need to be in head element -->
+<style>
+body {
+  background-image: url('img_girl.jpg');
+}
+</style>
+
 
 
   <h2>
