@@ -15,11 +15,113 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Plant Care and Soil Life</title>
   
-    <style>
+<!--Menus-->
+<style>
+/* Dropdown Button */
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
 
-body {background-color: powderblue;}
-h1   {color: blue;}
-h3   {color: darkblue;}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #d4c8b2;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #d4c8b2;}
+</style>
+
+<!-- Page sizes and colors -->
+<style>
+/* Body font */
+body {
+  margin: 0;
+  font-size: 14px;
+  font-family: Georgia, Times, serif;
+}
+/* Header & Navbar colors and sizes */
+.header {
+  background-color: #fbeff4;
+  padding: 10px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #d7e6e5;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #991a12;
+  text-align: center;
+  padding: 11px 14px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#navbar a:hover  {
+  background-color: #dc7b85;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #784136;
+  color: white;
+}
+
+.content  {
+  padding: 10px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+} 
+</style>
+
+</head>
+
+<!-- Page background and header colors background, links characteristics -->
+<style>
+body {background-color: #d0e799;}
+h1   {color: #25271e;}
+h3   {color: #6d0839;}
 p    {color: indianred;}
 
 a:link {
@@ -41,40 +143,29 @@ a:hover {
 }
 
 a:active {
-  color: yellow;
+  color: #d8c358;
   background-color: transparent;
   text-decoration: underline;
 }
-  </style>
-  
-</head>
+</style>
 
 <body>
   
-  <h1>
-    PLANT CARE AND SOIL LIFE:
-  </h1>
-  
-<hr>
+<!-- Start menu popup and scrolling -->
+<div class="header">
+  <h2>Plants and livingsoil</h2>
+</div>
 
-  <h3>
-    Navigation:
-  </h3>
-  
-<hr>
-    <nav>
-      <a href="./Home.html">Home</a>
-        <br>
-        <br>
-          <u>Pages in this section:</u>
-        <br>
-      <a href="./About.html">About</a>
-        <br>
-      <a href="./Learning.html">Learning</a>
-        <br>
-      <a href="./Projects.html">Projects</a>
-        
-  </nav>
+<div id="navbar">
+  <a class="active" href="index.html">Home</a>
+  <a href="Introduction.html">Introduction</a>
+  <a href="Contents.html">Contents</a>
+  <a href="How It Works.html">How it works</a>
+  <a href="Reasons We Pay More.html">Why we pay more</a>
+  <a href="Plants And Livingsoil.html">Plants and soil</a>
+  <a href="Contact.html">Contact</a>
+</div>
+<div class="content">
 
 <hr>
   
