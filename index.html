@@ -16,118 +16,122 @@
   <title>Home</title>
 
 <!--Menus-->
+
+
+<script>
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
 <style>
-/* Dropdown Button */
-.dropbtn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #d4c8b2;}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #d4c8b2;}
-</style>
-
-<!-- Page sizes and colors -->
-<style>
-/* Body font */
-body {
-  margin: 0;
-  font-size: 14px;
-  font-family: Georgia, Times, serif;
-}
-/* Header & Navbar colors and sizes */
-.header {
-  background-color: #fbeff4;
-  padding: 10px;
-  text-align: center;
-}
-
-#navbar {
+  /* Add a black background color to the top navigation */
+.topnav {
+  background-color: #7d101b;
   overflow: hidden;
-  background-color: #d7e6e5;
 }
 
-#navbar a {
+/* Style the links inside the navigation bar */
+.topnav a {
   float: left;
   display: block;
-  color: #991a12;
+  color: #f6f8e2;
   text-align: center;
-  padding: 11px 14px;
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 17px;
 }
 
-#navbar a:hover  {
-  background-color: #dc7b85;
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #d8c358;
   color: black;
 }
 
-#navbar a.active {
-  background-color: #784136;
-  color: white;
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #d5a140;
+  color: #720b3d;
 }
 
-.content  {
-  padding: 10px;
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
 }
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-} 
 </style>
+
+<style>
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+
+<script>
+  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<!-- menu popup and scrolling -->
+
+<div class="topnav" id="myTopnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="Introduction.html">Introduction</a>
+  <a href="Contents.html">Contents</a>
+  <a href="How It Works.html">How it works</a>
+  <a href="Reasons We Pay More.html">Why we pay more</a>
+  <a href="Plants And Livingsoil.html">Plants and soil</a>
+  <a href="Contact.html">Contact</a>
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
 
 </head>
 
 <!-- Page background and header colors background, links characteristics -->
 <style>
-body {background-color: #d0e799;}
+body {background-color: #1ff8e9;}
 h1   {color: #25271e;}
 h3   {color: #6d0839;}
-p    {color: indianred;}
+p    {color: rgb(180, 73, 73);}
 
 a:link {
-  color: green;
+  color: #818247;
   background-color: transparent;
-  text-decoration
+  text-decoration: bold;
 }
 
 a:visited {
@@ -143,7 +147,7 @@ a:hover {
 }
 
 a:active {
-  color: #d8c358;
+  color: #f0ce21;
   background-color: transparent;
   text-decoration: underline;
 }
@@ -151,34 +155,42 @@ a:active {
 
 <body>
   
-<!-- Start menu popup and scrolling -->
-<div class="header">
-  <h2>Home Welcome</h2>
-</div>
-
-<div id="navbar">
-  <a class="active" href="index.html">Home</a>
-  <a href="Introduction.html">Introduction</a>
-  <a href="Contents.html">Contents</a>
-  <a href="How It Works.html">How it works</a>
-  <a href="Reasons We Pay More.html">Why we pay more</a>
-  <a href="Plants And Livingsoil.html">Plants and soil</a>
-  <a href="Contact.html">Contact</a>
-</div>
-<div class="content">
-  
   <h1>
     WELCOME:
   </h1>
   
 <hr>
 
-    NOTE:
+<h3>
+  Costs for using this site:
+</h3>
+
+  I am not charging anything. I am not affiliated in any way shape or form. Unless otherwise noted, if you click on a resource link and you hit a subscribe or pay wall, please ignore it, come back and let me know so I can replace/fix it, come back in two weeks max if you needed that info yourself. 
+  <br>
+  <br>
+  My intentions have never been to charge others money. PS: please know that having no budget for this means cheap coding and cheaer website hosting. It is a compromise I hope you can understand.
+
+<hr>
+
+<h3>
+  Why would anyone do all of this for free?:
+</h3>
+
+
+So, so many reasons really. Mostly becasue if everyone adds a fee onto their knowledge or advice or adds a fee for this and a fee for that... It all adds up quickly. 
+<br>
+<br>
+I can't charge because to me it would be like having the cure for some horrible disease and then putting an extortionate price on it <i>because it is</i> a cure for _____disease. Which is wrong in so many ways.
+
+<hr>
+
+    NOTE: Site under construction.
     <br>
-    Thank you kindly for your patience while this site is under construction - updated Aug.5/2023 :)  
+    Thank you kindly for your patience - updated Aug.9/2023 :)  
     <br>
     Have a fantastic day  :)
     
+<hr>
 <hr>
 
   <h3>
@@ -229,28 +241,6 @@ a:active {
     More importantly, I suggest why our system is flawed, showing ways for people to <!--***curtis farms-->alleviate their own costs. I explain how easy it is to <!--*** basement microgreens-->start a profitable food producing business. As well as describing the required <!--***-->components for resiliant plant growth in general. Finally, I suggest ways to <!--***-->sell those harvests locally & legally and what can be done to create <!--***-->sustainable food growing systems. 
 
 <hr>
-
-  <h3>
-    Costs for using this site:
-  </h3>
-
-    I am not charging anything. I am not affiliated in any way shape or form. Unless otherwise noted, if you click on a resource link and you hit a subscribe or pay wall, please ignore it, come back and let me know so I can replace/fix it, come back in two weeks max if you needed that info yourself. 
-    <br>
-    <br>
-    My intentions have never been to charge others money. PS: please know that having no budget for this means cheap coding and cheaer website hosting. It is a compromise I hope you can understand.
- 
-<hr>
-
-  <h3>
-    Why would anyone do all of this for free?:
-  </h3>
-  
-
-  So, so many reasons really. Mostly becasue if everyone adds a fee onto their knowledge or advice or adds a fee for this and a fee for that... It all adds up quickly. 
-  <br>
-  <br>
-  I can't charge because to me it would be like having the cure for some horrible disease and then putting an extortionate price on it <i>because it is</i> a cure for _____disease. Which is wrong in so many ways.
-
 <hr>
   
   <h3>
@@ -292,12 +282,13 @@ a:active {
 <hr>
 
   <h3>
-    And:
+    What I've learnt:
   </h3>
   
     Above is what I have tried and tested and confirmed work alongside some of the following design tweaks. Others that I am about to suggest I have yet to try. That's where the extra resources come in.
 
 <hr>
+
   <h3>
     Plants needs and how that relates to my process:
   </h3>
@@ -369,7 +360,8 @@ a:active {
     <br>
     <br>
     As you can see, the more we try to accomplish in restricted growing areas the more it has costed us traditionally. I have also suggested how each cost can be taken care of. See below and projects for more.
-
+<!--Add link to projects page-->
+<hr>
 <hr>
 
   <h3>
@@ -390,7 +382,7 @@ a:active {
 
 <hr>
   <h3>
-    In summary:
+    Breif Recap:
   </h3>
   
     With these examples of what can be accomplished we get closer to year round food growth, locally, without numerous added costs, while implementing many cost reduction strategies, with nearly zero pest issues, no need for fertilizers, to create the ability to grow most of what we desire locally closer to the mouths that eat it.
@@ -424,7 +416,7 @@ a:active {
 <hr>
 
   <h3>
-    Conclusion:
+    Summarizing thus far:
   </h3>
   
     We all need plant foods for healthy long lives. Thankfully this can easily be accomplished through the abilities of nature alone. 
@@ -439,9 +431,12 @@ a:active {
     Thanks to dedicated individuals throughout the years we are now able to replicate some of those same symbiotic relationships in a pot. 
     <br>
     <br>
+
 <hr>
+<hr>
+
   <h3>
-    Composts vital role:
+    How does life get into the soil?:
   </h3>
   
     Further work and observation shows the importance of compost in these relationships. This has brought us to the reality that we can revitalize a field just as easily with compost tea and a sprayer as we can with fertilizer. The difference is that fertilizers have to be reapplied often. 
@@ -461,11 +456,13 @@ a:active {
     <br>
     
     <!--***-->Mycellium is the main network provider. Mycelium are truly amazing creatures with all that they do. If you want more on that please find information inside the site.
-    
+    <!--Link to soil health-->
+
+<hr>
 <hr>
 
   <h3>
-    We all need food:
+    We all need food for life and our overall health:
   </h3>
   
     Our deepest hope is that one day soon we will all live in a society where no one gets hungry unless they are fasting or for some other reason choose to do be hungry.
@@ -477,7 +474,7 @@ a:active {
 <hr>
   
   <h3>
-    Hunger:
+    Yet, to this day, hunger exists:
   </h3>
   
   Did you know that something like a <!--***-->billion people go hungry every day.
@@ -491,17 +488,19 @@ a:active {
   <p>
     People should never be hungry! 
        <br>
-  Especially when food <!--***-->grows for free, it is only the labour, storage, resources, and transport that we pay for.
+  Especially when food can <!--***-->grow for almsot free, it is only the labour, storage, resources, and transport that we pay for.
   </p>
   
 <hr>
+<hr>
   
   <h3>
-    Extra costs that growing locally mitigates:
+    Extra costs locally growing can mitigate:
+     <!--Might move this to Introduction page-->
   </h3>
   
     <ul>
-      <b>Avoidable costs:</b>
+      <b>What are these avoidable costs:</b>
       <br>
       <li><!--***-->Labour, <!--***-->refrigeration and <!--***-->energy at various <!--***-->warehouses outside of the local region, province, state and country, including <!--***-->loading and un loading at the <!--***-->shipyards.</li>
       <li><!--***-->Trucking between those warehouses and shipyards.</li>
@@ -532,7 +531,7 @@ a:active {
 <hr>
     
   <h3>
-    Motivating factors:
+    Universal motivation:
   </h3>
   
     <ul>
@@ -577,20 +576,21 @@ a:active {
 <hr>
 
 <h3>
-  Disclaimer:
+  Mostly legal disclaimer:
 </h3>
 
 This is intended for educational purposes only. It does not constitute professional or financial advice on any subject matter. The links or references to websites on this site are controlled by parties other than RealFood-NoCow. RealFood-NoCow is not responsible for, and does not endorse or accept any responsibility for the contents or use of these third-party websites. RealFood-NoCow is providing these links to you only as a reference, and the inclusion of any link does not imply or otherwise constitute an endorsement by RealFood-NoCow of the linked website and/or the content and materials found at the linked websites, except as specifically stated by us, RealFood-NoCow. It is your responsibility to take precautions and ensure that whatever you select for your own use is free from viruses or other items of an intrusive nature.
 
 <hr>
-
+<hr>
   
   <h3>
-    A deeper dive into proposed projects:
+    Detailed project overviews:
   </h3>
   
   
-  <h4>Project 1</h4> 
+  <h4>Project 1 - Gatt Farms (Greenhouse)</h4> 
+
   As seen above, maintaining enough temperature inside a building is easy if approached correctly. Below are improvments to the above ideas thar will combine to create a more than adequate growing situation for many warm climate foods and for year round plant growth in a greenhouse.
   <br>
   <br>
@@ -628,7 +628,8 @@ This is intended for educational purposes only. It does not constitute professio
   
 <hr>
 
-  <h4>Project 2</h4>
+  <h4>Project 2 - C&C Farms (Cows and /Chickens Farm)(Turn-key)</h4>
+
   Creates an important feed stream for Chilopoda Farms facility (project 3). 
   <br>
   <br>
@@ -691,7 +692,7 @@ This is intended for educational purposes only. It does not constitute professio
   
 <hr>
   
-  <h4>Project 3</h4> 
+  <h4>Project 3 - Chilopoda Farms (Closed-loop food facility)</h4> 
   Chilopoda Farms food facility. 
   <br>
   <br>
@@ -728,7 +729,7 @@ This is intended for educational purposes only. It does not constitute professio
    
 <hr>
     
-    <h4>Project 4</h4> 
+    <h4>Project 4 - Dusk Till Dawn Energy Systems (On site energy production)</h4> 
     Create needed energy on site. 
     <br>
     <br>
@@ -739,11 +740,15 @@ This is intended for educational purposes only. It does not constitute professio
     <br>
     <br>
     Solar may make sense in the summer or down south. It certainly doesn't make sense here where there is only 5 to 6 hours of sunlight a day.
+<p>
+  For more infomation please see:  <!--Link to projects-->
+</p> 
+
 <hr>
 <hr>
 
 <h3>
-  Summary:
+  Conclusion:
 </h3>
 
 Alegedly we lose up to 70% during shipping so they grow 70% more to account for those loses. This won't need to be true anymore if food is grown locally. Saving us space required to grow that same amount of food because the amount of space we will need to replace that production locally is significantly less. 50-70% less .
