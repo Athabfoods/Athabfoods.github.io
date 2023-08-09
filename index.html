@@ -13,7 +13,7 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Welcome!</title>
+  <title>Home</title>
 
 <!--Menus-->
 <style>
@@ -150,6 +150,22 @@ a:active {
 </style>
 
 <body>
+  
+<!-- Start menu popup and scrolling -->
+<div class="header">
+  <h2>Home Welcome</h2>
+</div>
+
+<div id="navbar">
+  <a class="active" href="index.html">Home</a>
+  <a href="Introduction.html">Introduction</a>
+  <a href="Contents.html">Contents</a>
+  <a href="How It Works.html">How it works</a>
+  <a href="Reasons We Pay More.html">Why we pay more</a>
+  <a href="Plants And Livingsoil.html">Plants and soil</a>
+  <a href="Contact.html">Contact</a>
+</div>
+<div class="content">
   
   <h1>
     WELCOME:
@@ -567,22 +583,6 @@ a:active {
 This is intended for educational purposes only. It does not constitute professional or financial advice on any subject matter. The links or references to websites on this site are controlled by parties other than RealFood-NoCow. RealFood-NoCow is not responsible for, and does not endorse or accept any responsibility for the contents or use of these third-party websites. RealFood-NoCow is providing these links to you only as a reference, and the inclusion of any link does not imply or otherwise constitute an endorsement by RealFood-NoCow of the linked website and/or the content and materials found at the linked websites, except as specifically stated by us, RealFood-NoCow. It is your responsibility to take precautions and ensure that whatever you select for your own use is free from viruses or other items of an intrusive nature.
 
 <hr>
-  
-<!-- Start menu popup and scrolling -->
-<div class="header">
-  <h2>Home Welcome</h2>
-</div>
-
-<div id="navbar">
-  <a class="active" href="index.html">Home</a>
-  <a href="Introduction.html">Introduction</a>
-  <a href="Contents.html">Contents</a>
-  <a href="How It Works.html">How it works</a>
-  <a href="Reasons We Pay More.html">Why we pay more</a>
-  <a href="Plants And Livingsoil.html">Plants and soil</a>
-  <a href="Contact.html">Contact</a>
-</div>
-<div class="content">
 
   
   <h3>
@@ -815,24 +815,6 @@ Alegedly we lose up to 70% during shipping so they grow 70% more to account for 
      The rest of this site is an in depth look at all that I have said. I have more information as well as resources galore to help in many topics. Mostly food production and energy, also other things like website building, water pumping for free, electrical learing, free education resources, cources from major universities and colleges, addiction stuff, community stuff, and more.
      <br>
 </div>
-
-<!-- End menu scrolling -->
-<script>
-window.onscroll = function()
-{myFunction()};
-
-var navbar = document.getElementById("navbar");
-
-var sticky = navbar.offsetTop;
-
-function myFunction()  {
-  if (window.pageYOffset >= sticky)  {
-  navbar.classList.add("sticky")
-  } else {
-  navbar.classList.remove("sticky");
-  }
-}
-</script>
  
 </body>
 
