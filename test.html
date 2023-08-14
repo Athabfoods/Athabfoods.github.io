@@ -83,7 +83,281 @@ We have created a fictional band website. Lorem ipsum dolor sit amet, consectetu
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 
+<!--From top of explanation page-->
 
+<!--Menus-->
+
+
+<script>
+  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+  
+  <style>
+    /* Add a black background color to the top navigation */
+  .topnav {
+    background-color: #7d101b;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f6f8e2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #d8c358;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #d5a140;
+    color: #720b3d;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  </style>
+  
+  <style>
+    /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  </style>
+  
+  <script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+  
+  <!-- menu popup and scrolling -->
+  
+  <div class="topnav" id="myTopnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="Introduction.html">Introduction</a>
+    <a href="Contents.html">Contents</a>
+    <a href="How It Works.html">How it works</a>
+    <a href="Reasons We Pay More.html">Why we pay more</a>
+    <a href="Plants And Livingsoil.html">Plants and soil</a>
+    <a href="Contact.html">Contact</a>
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  
+  
+  </head>
+  
+  <!-- Page background and header colors background, links characteristics -->
+  <style>
+  body {background-color: #1ff8e9;}
+  h1   {color: #25271e;}
+  h3   {color: #6d0839;}
+  p    {color: rgb(180, 73, 73);}
+  
+  a:link {
+    color: #818247;
+    background-color: transparent;
+    text-decoration: bold;
+  }
+  
+  a:visited {
+    color: orangered;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: purple;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: #f0ce21;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  </style>
+
+<!--From top of body element of explanation page-->
+
+<div id="navbar">
+  <a class="active" href="index.html">Home</a>
+  <a href="Introduction.html">Introduction</a>
+  <a href="Contents.html">Contents</a>
+  <a href="How I
+
+<!-- Reference code --> 
+<h1 style="font-family:verdana;">This is a heading</h1>
+<p style="font-family:courier;">This is a paragraph.</p>
+
+<h1 style="color:blue;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p>
+
+<h1 style="background-color:orange;">This is a heading</h1>
+<p style="background-color:tomato;">This is a paragraph.</p>
+
+<h1 style="font-size:100%;">This is a heading</h1>
+<p style="font-size:160%;">This is a paragraph.</p>
+
+<h1 style="text-align:center;">Centered Heading</h1>
+<p style="text-align:center;">Centered paragraph.</p>
+
+<!-- Various emphasis attributes -->
+<p>Do not forget to buy <mark>milk</mark> today.</p>
+
+<p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+
+<p>This is <sub>subscripted</sub> text.</p>
+
+<p>This is <sup>subscripted</sup> text.</p>
+
+<!-- Border for element -->
+<h1 style="border:2px solid Tomato;">Hello World</h1>
+<h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+<h1 style="border:2px solid Violet;">Hello World</h1>
+
+<!-- Transparancy levels -->
+<h1 style="background-color:rgba(255, 99, 71, 0);">rgba(255, 99, 71, 0)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.2);">rgba(255, 99, 71, 0.2)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.6);">rgba(255, 99, 71, 0.6)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.8);">rgba(255, 99, 71, 0.8)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)</h1>
+
+<!-- Their email will open up with blank to send -->
+<a href="mailto:someone@example.com">Send email</a>
+
+<!-- Jump up or down on this page -->
+<h2 id="C4">Chapter 4</h2>
+<a href="#C4">Jump to Chapter 4</a>
+<!-- Jump to another page -->
+<a href="html_demo.html#C4">Jump to Chapter 4</a>
+
+<!-- Set image size (both code styles) -->
+<img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+<!-- Alternatively -->
+<img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+
+<!-- Images in sub-folder -->
+<img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+<!-- Floating images -->
+<p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+The image will float to the right of the text.</p>
+
+<p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+The image will float to the left of the text.</p>
+
+<!-- Background image in element -->
+<p style="background-image: url('img_girl.jpg');">
+  <!-- Needs to be in head element -->
+  <style>
+    p {
+      background-image: url('img_girl.jpg');
+    }
+  </style>
+  
+<!-- Background image whole page (need to be in head element -->
+<style>
+body {
+  background-image: url('img_girl.jpg');
+}
+</style>
+<br>
+
+<!-- Descriptive List -->
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+<!-- Various bullet types -->
+<ul style="list-style-type:disc;">
+  <!-- Other attributes - circle square none -->
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+<!--From top of introduction page-->
+
+<!-- Page background and header colors background, links characteristics -->
+<style>
+  body {background-color: #1ff8e9;}
+  h1   {color: #25271e;}
+  h3   {color: #6d0839;}
+  p    {color: rgb(180, 73, 73);}
+  
+    a:link {
+      color: #818247;
+      background-color: transparent;
+      text-decoration: bold;
+    }
+    
+    a:visited {
+      color: orangered;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      color: purple;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    
+    a:active {
+      color: #f0ce21;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+  </style>
 </body>
 
 </html>
