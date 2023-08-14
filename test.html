@@ -370,3 +370,282 @@ body {
 </body>
 
 </html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  
+<h1>
+  title
+</h1>
+
+<p title="I'm a tooltip">This is a paragraph.</p>
+
+<h1 style="font-size:60px;">Heading 1</h1>
+
+<pre>
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+</pre>
+
+<body>
+
+<h1 style="background-color:powderblue;">This is a heading</h1>
+<p style="background-color:tomato;">This is a paragraph.</p>
+
+</body>
+
+<h1 style="color:blue;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p>
+
+<h1 style="font-family:verdana;">This is a heading</h1>
+<p style="font-family:courier;">This is a paragraph.</p>
+
+<h1 style="font-size:300%;">This is a heading</h1>
+<p style="font-size:160%;">This is a paragraph.</p>
+
+<h1 style="text-align:center;">Centered Heading</h1>
+<p style="text-align:center;">Centered paragraph.</p>
+
+<p>Do not forget to buy <mark>milk</mark> today.</p>
+
+<p>This is <sub>subscripted</sub> text.</p>
+
+<p>This is <sup>superscripted</sup> text.</p>
+
+
+<style>
+/*Boarder*/
+p {
+  border: 2px solid powderblue;
+}
+/*Padding*/
+p {
+  border: 2px solid powderblue;
+  padding: 30px;
+}
+/*Margin*/
+p {
+  border: 2px solid powderblue;
+  margin: 50px;
+}
+</style>
+
+<!--img src-->
+<a href="default.asp">
+<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+
+<!-- link to email-->
+<a href="mailto:someone@example.com">Send email</a>
+
+<!--button as link-->
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+<!--button css-->
+<style>
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+</style>
+
+<!--Jump too links "Bookmarks"-->
+<!--bookmark-->
+<h2 id="C4">Chapter 4</h2>
+<!--Link at top-->
+<a href="#C4">Jump to Chapter 4</a>
+<!--Or bookmark link on other page-->
+<a href="html_demo.html#C4">Jump to Chapter 4</a>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  width: 100%;
+}
+</style>
+</head>
+<body>
+
+<img src="html5.gif" alt="HTML5 Icon" width="128" height="128">
+
+<img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+<!--to use an image as a link-->
+<a href="default.asp">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+<!--add image to html emement-->
+<p style="background-image: url('img_girl.jpg');">
+  
+<!--backgroumd image for entire page-->
+<style>
+body {
+  background-image: url('img_girl.jpg');
+}
+</style>
+<!--repeat background image-->
+<style>
+body {
+  background-image: url('example_img_girl.jpg');
+}
+</style>
+
+<!--no repeat background image-->
+<style>
+body {
+  background-image: url('example_img_girl.jpg');
+  background-repeat: no-repeat;
+}
+</style>
+
+<!--cover entire element.fix image on element and keep ratios so no stretch occurs-->
+<style>
+body {
+  background-image: url('img_girl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+<!--table-->
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+<style>
+body {background-color: #1ff8e9;}
+h1   {color: #25271e;}
+h3   {color: #6d0839;}
+p    {color: rgb(180, 73, 73);}
+
+a:link {
+  color: #818247;
+  background-color: transparent;
+  text-decoration: bold;
+}
+
+a:visited {
+  color: orangered;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: purple;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #f0ce21;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+
+<style>
+body {background-color: #1ff8e9;}
+h1   {color: #25271e;}
+h3   {color: #6d0839;}
+p    {color: rgb(180, 73, 73);}
+
+a:link {
+  color: #818247;
+  background-color: transparent;
+  text-decoration: bold;
+}
+
+a:visited {
+  color: orangered;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: purple;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #f0ce21;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+
+<style>
+  body {background-color: #1ff8e9;}
+  h1   {color: #25271e;}
+  h3   {color: #6d0839;}
+  p    {color: rgb(180, 73, 73);}
+  
+    a:link {
+      color: #818247;
+      background-color: transparent;
+      text-decoration: bold;
+    }
+    
+    a:visited {
+      color: orangered;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      color: purple;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    
+    a:active {
+      color: #f0ce21;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    </style>
