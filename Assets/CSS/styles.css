@@ -1,0 +1,53 @@
+body {background-color: #1ff8e9;}
+h1   {color: #25271e;}
+h3   {color: #6d0839;}
+p    {color: rgb(180, 73, 73);}
+
+a:link {
+  color: #818247;
+  background-color: transparent;
+  text-decoration: bold;
+}
+
+a:visited {
+  color: orangered;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: purple;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #f0ce21;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.btn-group button {
+  background-color: #04AA6D; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
