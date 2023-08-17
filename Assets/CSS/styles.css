@@ -1,8 +1,3 @@
-body {background-color: #1ff8e9;}
-h1   {color: #25271e;}
-h3   {color: #6d0839;}
-p    {color: rgb(180, 73, 73);}
-
 
 /* PILL NAVIGATION */
 
@@ -181,20 +176,6 @@ a:hover {
   background-color: #f1f1f1;
 }
 
-/* The progress container (grey background) */
-.progress-container {
-  width: 100%;
-  height: 8px;
-  background: #ccc;
-}
-
-/* The progress bar (scroll indicator) */
-.progress-bar {
-  height: 8px;
-  background: #04AA6D;
-  width: 0%;
-}
-
 /* Navbar container */
 .navbar {
   overflow: hidden;
@@ -253,10 +234,10 @@ a:hover {
 }
 
 
-/* Create four equal columns that floats next to each other */
+/* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 25%;
+  width: 33.33%;
   padding: 10px;
   background-color: #ccc;
   height: 250px;
@@ -291,3 +272,4 @@ a:hover {
     height: auto;
   }
 }
+
